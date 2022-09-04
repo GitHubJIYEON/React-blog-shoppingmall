@@ -21,3 +21,14 @@ function Modal(){
 let Modal = () => {
   return ( <div></div>) 
 } */
+
+let [따봉, 따봉변경] = useState(0, 0, 0)
+// 좋아요 버튼 클릭시 따봉 숫자 올라가도록
+<h4>
+  { 글제목[i] }
+  <span onclick={() => {
+    let copy= [...따봉];
+    copy[i] = copy[i]+1;
+    따봉변경(copy)
+  }}>좋아요 </span> {따봉[i]}
+</h4>
